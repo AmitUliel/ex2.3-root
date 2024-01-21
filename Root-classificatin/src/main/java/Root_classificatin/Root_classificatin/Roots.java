@@ -1,6 +1,9 @@
 package Root_classificatin.Root_classificatin;
 
-
+/*
+ * Israel Amit Uliel 319050423
+ * Paz Abitbul 315663963
+ */
 
 enum Root_Types {
       No_roots,
@@ -33,29 +36,32 @@ class Roots
     	  return;
       }
       
-      if (a != 0) {
+      if (a != 0) 
+      {
 	      if(q>0 )
 	      {
-		      roots = Root_Types.Equal_roots; 
+		      roots = Root_Types.Two_roots; 
 	      }
 	      else if(q==0)
 	      {
 		      // the equation has exactly one root
 		     
 		     
-		      roots = Root_Types.Two_roots; 
+		      roots = Root_Types.Equal_roots; 
 		      
 	      } 
 	      else
 	      {
 		      // the equation has no roots if b^2 < 4ac
 		     
-		      roots = Root_Types.Not_quadratic;
+		      roots = Root_Types.No_roots;
 	      }
       }
-      else {
+      
+      else 
+      {
     	  
-    	  roots = Root_Types.Two_roots; 
+    	  roots = Root_Types.Not_quadratic; 
       }
    }
 
