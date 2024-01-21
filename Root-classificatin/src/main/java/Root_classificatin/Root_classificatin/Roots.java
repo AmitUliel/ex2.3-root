@@ -24,7 +24,6 @@ class Roots
        return !(x >= a && x <= b);
    }
    
-   
    public static void calculate_roots(double a, double b, double c)
    {
       double q, r;
@@ -45,29 +44,24 @@ class Roots
 	      else if(q==0)
 	      {
 		      // the equation has exactly one root
-		     
-		     
 		      roots = Root_Types.Equal_roots; 
 		      
 	      } 
 	      else
 	      {
-		      // the equation has no roots if b^2 < 4ac
-		     
+		      // the equation has no roots if b^2 < 4ac	     
 		      roots = Root_Types.No_roots;
 	      }
       }
       
       else 
-      {
-    	  
+      {    	  
     	  roots = Root_Types.Not_quadratic; 
       }
    }
 
     public static Root_Types root_types()
-    {
-    	
+    {   	
     	return roots;
     }
 

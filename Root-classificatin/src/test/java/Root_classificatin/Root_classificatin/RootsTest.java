@@ -39,8 +39,7 @@ public class RootsTest
 		
 		Roots.calculate_roots(1, 2, 1);
 		
-		String root_expected = Root_Types.Equal_roots.toString();
-		
+		String root_expected = Root_Types.Equal_roots.toString();	
 		
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
@@ -57,13 +56,11 @@ public class RootsTest
 	
 	@Test
 	public void testPartion5_NoRoots() 
-	{
-		
+	{	
 		Roots.calculate_roots(2, 3, 4);
 		
 		String root_expected = Root_Types.No_roots.toString();
-		
-		
+	
 		assertEquals(root_expected, Roots.root_types().toString());
 	}
 	
